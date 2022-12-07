@@ -1,0 +1,109 @@
+body {
+  background-color: black;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.testbox {
+  display: flex;
+  color: #9AC71B;
+  flex-direction: row;
+  font-size: 40px;
+  font-family: Verdana;
+}
+
+h1 {
+  display: flex;
+  color: #ffffff;
+  flex-direction: row;
+  font-size: 50px;
+  font-family: Verdana;
+  width: 50%;
+}
+
+h2 {
+  display: flex;
+  color: #ffffff;
+  flex-direction: row;
+  font-size: 25px;
+  font-family: Verdana;
+  width: 50%;
+}
+
+.text {
+  display: flex;
+  color: #ffffff;
+  flex-direction: row;
+  font-size: 20px;
+  font-family: Verdana;
+  width: 50%;
+}
+
+.tonedDownText {
+  display: flex;
+  color: rgba(255, 255, 255, 0.3);
+  flex-direction: row;
+  font-size: 20px;
+  font-family: Verdana;
+  border-bottom: 1px solid;
+  border-color: rgba(255, 255, 255, 0.3);
+  width: 290px;
+}
+
+.middleSection {
+  display: flex;
+}
+
+.indexArt {
+  width: 50%;
+  display: flex;
+  flex: row;
+  justify-content: right;
+  margin-top: -12rem;
+}
+
+.indexNav {
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+  font-size: 50px;
+  font-family: Verdana;
+  list-style: none;
+  width: 50%;
+}
+.indexNav li {
+  margin-bottom: 4rem;
+}
+
+.contactInfo {
+  border-top: 1px solid;
+  border-color: rgba(255, 255, 255, 0.3);
+  width: 50%;
+}
+
+.info {
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+  font-size: 15px;
+  font-family: Verdana;
+}
+.info a {
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+
+.indexHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo1 {
+  width: 50%;
+}
+
+.logo2 {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+}/*# sourceMappingURL=style.css.map */

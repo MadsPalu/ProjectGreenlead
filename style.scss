@@ -1,0 +1,97 @@
+$white: #ffffff;
+$wTonedDown: rgba(#ffffff, 0.3);
+$offWhite: #CFD7BF;
+$lightGreen: #9AC71B;
+$darkGreen: #61812C;
+$fontStack: Verdana; //add more for best practice
+$standardFontSize: 40px;
+$footerFontSize: 20px;
+
+@mixin textBox($textcolor, $direction, $fontSize, $fontFam) {
+    display: flex;
+    color: $textcolor;
+    flex-direction: $direction;
+    font-size: $fontSize;
+    font-family: $fontFam;
+}
+
+body{
+    background-color: black;
+    margin-left: 8rem;
+    margin-right: 8rem
+}
+
+.testbox{
+    @include textBox($lightGreen, row, $standardFontSize, $fontStack)
+}
+
+h1{
+    @include textBox($white, row, 50px, $fontStack);
+    width: 50%;
+}
+h2{
+    @include textBox($white, row, 25px, $fontStack);
+    width: 50%;
+}
+
+.text {
+    @include textBox($white, row, 20px, $fontStack);
+    width: 50%;
+}
+
+.tonedDownText{
+    @include textBox($wTonedDown, row, 20px, $fontStack);
+    border-bottom: 1px solid;
+    border-color: $wTonedDown;
+    width: 290px;
+}
+
+.middleSection{
+    display: flex;
+}
+
+.indexArt{
+    width: 50%;
+    display: flex;
+    flex: row;
+    justify-content: right;
+    margin-top: -12rem;
+}
+
+.indexNav{
+    @include textBox($white, column, 50px, $fontStack);
+    list-style: none;
+    width: 50%;
+    li{
+        margin-bottom: 4rem;
+    }
+}
+
+.contactInfo{
+    border-top: 1px solid;
+    border-color: $wTonedDown;
+    width: 50%
+}
+
+.info{
+    @include textBox($white, column, 15px, $fontStack);
+    a{
+        color: $white;
+        margin-top: 0.5rem;
+    }
+}
+
+.indexHeader{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo1{
+    width: 50%;
+}
+
+.logo2{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
