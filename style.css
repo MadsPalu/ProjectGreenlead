@@ -4,14 +4,6 @@ body {
   margin-right: 8rem;
 }
 
-.testbox {
-  display: flex;
-  color: #9AC71B;
-  flex-direction: row;
-  font-size: 40px;
-  font-family: Verdana;
-}
-
 h1 {
   display: flex;
   color: #ffffff;
@@ -19,6 +11,7 @@ h1 {
   font-size: 50px;
   font-family: Verdana;
   width: 50%;
+  font-weight: 400;
 }
 
 h2 {
@@ -128,6 +121,7 @@ h2 {
   width: 70%;
 }
 
-.servicePic {
+.servicePicContainer {
   width: 30%;
+  justify-content: right;
 }/*# sourceMappingURL=style.css.map */

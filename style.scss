@@ -7,12 +7,14 @@ $fontStack: Verdana; //add more for best practice
 $standardFontSize: 40px;
 $footerFontSize: 20px;
 
-@mixin textBox($textcolor, $direction, $fontSize, $fontFam) {
+@mixin textBox($textcolor, $direction, $fontSize, $fontFam, $fontWeight, $lineHeight) {
     display: flex;
     color: $textcolor;
     flex-direction: $direction;
     font-size: $fontSize;
     font-family: $fontFam;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
 }
 
 body{
@@ -21,13 +23,10 @@ body{
     margin-right: 8rem
 }
 
-.testbox{
-    @include textBox($lightGreen, row, $standardFontSize, $fontStack)
-}
-
 h1{
     @include textBox($white, row, 50px, $fontStack);
     width: 50%;
+    font-weight: 400;
 }
 h2{
     @include textBox($white, row, 25px, $fontStack);
@@ -113,6 +112,7 @@ h2{
     width: 70%;
 }
 
-.servicePic{
+.servicePicContainer{
     width: 30%;
+    justify-content: right;
 }
