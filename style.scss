@@ -1,8 +1,8 @@
 $white: #ffffff;
 $wTonedDown: rgba(#ffffff, 0.3);
-$offWhite: #CFD7BF;
-$lightGreen: #9AC71B;
-$darkGreen: #61812C;
+$offWhite: #cfd7bf;
+$lightGreen: #9ac71b;
+$darkGreen: #61812c;
 $fontStack: Verdana; //add more for best practice
 $fontNormal: 400;
 $fontBold: 700;
@@ -10,136 +10,139 @@ $standardFontSize: 40px;
 $footerFontSize: 20px;
 
 @mixin textBox($textcolor, $direction, $fontSize, $fontFam, $fontWeight, $lineHeight) {
-    display: flex;
-    color: $textcolor;
-    flex-direction: $direction;
-    font-size: $fontSize;
-    font-family: $fontFam;
-    font-weight: $fontWeight;
-    line-height: $lineHeight;
+  display: flex;
+  color: $textcolor;
+  flex-direction: $direction;
+  font-size: $fontSize;
+  font-family: $fontFam;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
 }
 
-body{
-    background-color: black;
-    margin-left: 8rem;
-    margin-right: 8rem
+body {
+  background-color: black;
+  margin-left: 8rem;
+  margin-right: 8rem;
 }
 
-h1{
-    @include textBox($white, row, 50px, $fontStack, $fontNormal, 60px);
+h1 {
+  @include textBox($white, row, 50px, $fontStack, $fontNormal, 60px);
 }
 
-h2{
-    @include textBox($white, row, 25px, $fontStack, $fontNormal, 30px);
-    width: 50%;
+h2 {
+  @include textBox($white, row, 25px, $fontStack, $fontNormal, 30px);
+  width: 50%;
 }
 
 .text {
-    @include textBox($white, row, 20px, $fontStack, $fontNormal, 30px);
+  @include textBox($white, row, 20px, $fontStack, $fontNormal, 30px);
 }
 
-.tonedDownText{
-    @include textBox($wTonedDown, row, 20px, $fontStack, $fontNormal, 30px);
-    border-bottom: 1px solid;
-    border-color: $wTonedDown;
-    width: 290px;
+.tonedDownText {
+  @include textBox($wTonedDown, row, 20px, $fontStack, $fontNormal, 30px);
+  border-bottom: 1px solid;
+  border-color: $wTonedDown;
+  width: 290px;
 }
 
-.middleSection{
-    display: flex;
+.middleSection {
+  display: flex;
 }
 
-.indexArt{
-    width: 50%;
-    display: flex;
-    flex: row;
-    justify-content: right;
-    margin-top: -12rem;
+.indexArt {
+  width: 50%;
+  display: flex;
+  flex: row;
+  justify-content: right;
+  margin-top: -12rem;
 }
 
-.indexNav{
-    @include textBox($white, column, 50px, $fontStack, $fontNormal, 30px);
-    list-style: none;
-    width: 50%;
-    li{
-        margin-bottom: 4rem;
-    }
+.indexNav {
+  @include textBox($white, column, 50px, $fontStack, $fontNormal, 30px);
+  list-style: none;
+  width: 50%;
+  li {
+    margin-bottom: 4rem;
+  }
 }
 
-.contactInfo{
-    border-top: 1px solid;
-    border-color: $wTonedDown;
-    width: 50%
+.contactInfo {
+  border-top: 1px solid;
+  border-color: $wTonedDown;
+  width: 50%;
 }
 
-.info{
-    @include textBox($white, column, 15px, $fontStack, $fontNormal, 30px);
-    a{
-        color: $white;
-        margin-top: 0.5rem;
-    }
+.info {
+  @include textBox($white, column, 15px, $fontStack, $fontNormal, 30px);
+  a {
+    color: $white;
+    margin-top: 0.5rem;
+  }
 }
 
-.indexHeader{
-    display: flex;
-    flex-direction: row;
+.indexHeader {
+  display: flex;
+  flex-direction: row;
 }
 
-.logo1{
-    width: 50%;
+.logo1 {
+  width: 50%;
 }
 
-.logo2{
-    width: 50%;
-    display: flex;
-    justify-content: right;
+.logo2 {
+  width: 50%;
+  display: flex;
+  justify-content: right;
 }
 
-.anchorNumber{
-    @include textBox($wTonedDown, row, 40px, $fontStack, $fontBold, 50px);
+.anchorNumber {
+  @include textBox($wTonedDown, row, 40px, $fontStack, $fontBold, 50px);
 }
 
-.anchorText{
-    @include textBox($wTonedDown, row, 20px, $fontStack, $fontNormal, 24px);
-    margin-top: -2rem;
+.anchorText {
+  @include textBox($wTonedDown, row, 20px, $fontStack, $fontNormal, 24px);
+  margin-top: -2rem;
 }
 
-.navSection{
-    display: flex;
-    flex-direction: row;
+.navSection {
+  display: flex;
+  flex-direction: row;
 }
 
-.anchorMenu{
-    display: grid;
-    grid-template-columns: 
-    auto auto auto;
-    padding: 10px;
-    width: 70%;
+.anchorMenu {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  width: 70%;
 }
 
-.servicePicContainer{
-    width: 30%;
-    justify-content: right;
+.servicePicContainer {
+  width: 30%;
+  justify-content: right;
 }
 
-.infoLine{
-    @include textBox($lightGreen, row, 25px, $fontStack, $fontBold, 30px);
+.infoLine {
+  @include textBox($lightGreen, row, 25px, $fontStack, $fontBold, 30px);
 }
 
-.serviceSections{
-    margin-top: 10rem;
+.serviceSections {
+  margin-top: 10rem;
 }
 
-.furtherInfoBox{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.furtherInfoBox {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-.furtherInfoText{
-    @include textBox($darkGreen, column, 25px, $fontStack, $fontNormal, 30px);
+.furtherInfoText {
+  @include textBox($darkGreen, column, 25px, $fontStack, $fontNormal, 30px);
 }
 
-.emailBtn{
-    background-color: $lightGreen;
+.emailBtn {
+  background-color: $lightGreen;
+}
+
+ul {
+  @include textBox($white, column, 15px, $fontStack, $fontNormal, 30px);
 }
