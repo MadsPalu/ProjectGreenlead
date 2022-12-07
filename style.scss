@@ -26,22 +26,20 @@ body{
 }
 
 h1{
-    @include textBox($white, row, 50px, $fontStack);
-    width: 50%;
-    font-weight: 400;
+    @include textBox($white, row, 50px, $fontStack, $fontNormal, 60px);
 }
+
 h2{
-    @include textBox($white, row, 25px, $fontStack);
+    @include textBox($white, row, 25px, $fontStack, $fontNormal, 30px);
     width: 50%;
 }
 
 .text {
-    @include textBox($white, row, 20px, $fontStack);
-    width: 50%;
+    @include textBox($white, row, 20px, $fontStack, $fontNormal, 30px);
 }
 
 .tonedDownText{
-    @include textBox($wTonedDown, row, 20px, $fontStack);
+    @include textBox($wTonedDown, row, 20px, $fontStack, $fontNormal, 30px);
     border-bottom: 1px solid;
     border-color: $wTonedDown;
     width: 290px;
@@ -60,7 +58,7 @@ h2{
 }
 
 .indexNav{
-    @include textBox($white, column, 50px, $fontStack);
+    @include textBox($white, column, 50px, $fontStack, $fontNormal, 30px);
     list-style: none;
     width: 50%;
     li{
@@ -75,7 +73,7 @@ h2{
 }
 
 .info{
-    @include textBox($white, column, 15px, $fontStack);
+    @include textBox($white, column, 15px, $fontStack, $fontNormal, 30px);
     a{
         color: $white;
         margin-top: 0.5rem;
@@ -97,8 +95,13 @@ h2{
     justify-content: right;
 }
 
+.anchorNumber{
+    @include textBox($wTonedDown, row, 40px, $fontStack, $fontBold, 50px);
+}
+
 .anchorText{
-    @include textBox($wTonedDown, row, 20px, $fontStack);
+    @include textBox($wTonedDown, row, 20px, $fontStack, $fontNormal, 24px);
+    margin-top: -2rem;
 }
 
 .navSection{
@@ -117,4 +120,26 @@ h2{
 .servicePicContainer{
     width: 30%;
     justify-content: right;
+}
+
+.infoLine{
+    @include textBox($lightGreen, row, 25px, $fontStack, $fontBold, 30px);
+}
+
+.serviceSections{
+    margin-top: 10rem;
+}
+
+.furtherInfoBox{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.furtherInfoText{
+    @include textBox($darkGreen, column, 25px, $fontStack, $fontNormal, 30px);
+}
+
+.emailBtn{
+    background-color: $lightGreen;
 }
