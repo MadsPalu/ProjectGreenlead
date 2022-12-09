@@ -216,3 +216,16 @@ h2{
         margin-top: -2rem;
     }
 }
+/*workshop start*/
+ul {
+  @include textBox($white, column, 20px, $fontStack, $fontNormal, 30px);
+}
+.furtherInfoHeading {
+  @include textBox($darkGreen, column, 40px, $fontStack, $fontNormal, 49px);
+  margin-top: -40px;
+}
+.workshopFlex {
+  display: flex;
+  width: 100%;
+}
+/*workshop end*/

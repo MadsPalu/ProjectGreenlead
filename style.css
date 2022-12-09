@@ -282,4 +282,33 @@ h2 {
   font-weight: 400;
   line-height: 36px;
   margin-top: -2rem;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*workshop start*/
+ul {
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+  font-size: 20px;
+  font-family: Verdana;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.furtherInfoHeading {
+  display: flex;
+  color: #61812C;
+  flex-direction: column;
+  font-size: 40px;
+  font-family: Verdana;
+  font-weight: 400;
+  line-height: 49px;
+  margin-top: -40px;
+}
+
+.workshopFlex {
+  display: flex;
+  width: 100%;
+}
+
+/*workshop end*//*# sourceMappingURL=style.css.map */
