@@ -168,7 +168,7 @@ h2 {
 
 .infoLine {
   display: flex;
-  color: #9AC71B;
+  color: #9ac71b;
   flex-direction: row;
   font-size: 25px;
   font-family: Verdana;
@@ -188,7 +188,7 @@ h2 {
 
 .furtherInfoText {
   display: flex;
-  color: #61812C;
+  color: #61812c;
   flex-direction: column;
   font-size: 15px;
   font-family: Verdana;
@@ -199,7 +199,7 @@ h2 {
 .emailBtn {
   width: 154px;
   height: 49px;
-  background-color: #61812C;
+  background-color: #61812c;
   display: flex;
   color: #ffffff;
   flex-direction: none;
@@ -263,7 +263,7 @@ h2 {
 }
 .sectionGrid .gridNumber {
   display: flex;
-  color: #9AC71B;
+  color: #9ac71b;
   flex-direction: row;
   font-size: 40px;
   font-family: Verdana;
@@ -282,6 +282,7 @@ h2 {
   font-weight: 400;
   line-height: 36px;
   margin-top: -2rem;
+  justify-content: center;
 }
 
 /*workshop start*/
@@ -297,7 +298,7 @@ ul {
 
 .furtherInfoHeading {
   display: flex;
-  color: #61812C;
+  color: #61812c;
   flex-direction: column;
   font-size: 40px;
   font-family: Verdana;
@@ -309,6 +310,50 @@ ul {
 .workshopFlex {
   display: flex;
   width: 100%;
+}
+
+.quote {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-family: "Verdana";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.quote::before {
+  content: open-quote;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 92px;
+  color: #61812c;
+  display: inline;
+}
+
+.quote::after {
+  content: close-quote;
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 92px;
+  color: #61812c;
+  display: inline;
+}
+
+span {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 92px;
+  color: #61812c;
 }
 
 /*workshop end*//*# sourceMappingURL=style.css.map */
