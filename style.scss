@@ -120,11 +120,12 @@ h2{
     grid-template-columns: 
     auto auto auto;
     padding: 10px;
-    width: 70%;
+    width: 100%;
 }
 
 .anchorMenuItem{
     text-decoration: none;
+    justify-content: right;
 }
 
 .anchorMenuItem:hover{
@@ -157,14 +158,14 @@ h2{
 }
 
 .furtherInfoText{
-    @include textBox($darkGreen, column, 25px, $fontStack, $fontNormal, 30px);
+    @include textBox($darkGreen, column, 15px, $fontStack, $fontNormal, 18px);
 }
 
 .emailBtn{
-    width: 227px;
-    height: 66px;
+    width: 154px;
+    height: 49px;
     background-color: $darkGreen;
-    @include textBox($white, none, 30px, $fontStack, $fontBold, 36px);
+    @include textBox($white, none, 20px, $fontStack, $fontBold, 24px);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -178,11 +179,10 @@ h2{
     }
 }
 
-//hover no work
 .serviceNav{
     position: fixed;
     right: 0;
-    top: 30rem;
+    top: 20rem;
         .anchorText{
             @include textBox($wTonedDown, row, 10px, $fontStack, $fontBold, 12px);
         }
@@ -190,4 +190,29 @@ h2{
             @include textBox($wTonedDown, row, 20px, $fontStack, $fontBold, 24px);
             margin-bottom: 2rem;
         }
+}
+
+.sectionGrid{
+    display: grid;
+    grid-template-columns: 
+    auto auto auto;
+    width: 70%;
+
+    .sectionGridItem{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gridNumber{
+        @include textBox($lightGreen, row, 40px, $fontStack, $fontBold, 49px);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gridText{
+        @include textBox($white, row, 30px, $fontStack, $fontNormal, 36px);
+        margin-top: -2rem;
+    }
 }

@@ -145,11 +145,12 @@ h2 {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 10px;
-  width: 70%;
+  width: 100%;
 }
 
 .anchorMenuItem {
   text-decoration: none;
+  justify-content: right;
 }
 
 .anchorMenuItem:hover p {
@@ -189,23 +190,23 @@ h2 {
   display: flex;
   color: #61812C;
   flex-direction: column;
-  font-size: 25px;
+  font-size: 15px;
   font-family: Verdana;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 18px;
 }
 
 .emailBtn {
-  width: 227px;
-  height: 66px;
+  width: 154px;
+  height: 49px;
   background-color: #61812C;
   display: flex;
   color: #ffffff;
   flex-direction: none;
-  font-size: 30px;
+  font-size: 20px;
   font-family: Verdana;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 24px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -228,7 +229,7 @@ h2 {
 .serviceNav {
   position: fixed;
   right: 0;
-  top: 30rem;
+  top: 20rem;
 }
 .serviceNav .anchorText {
   display: flex;
@@ -248,4 +249,37 @@ h2 {
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 2rem;
+}
+
+.sectionGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 70%;
+}
+.sectionGrid .sectionGridItem {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.sectionGrid .gridNumber {
+  display: flex;
+  color: #9AC71B;
+  flex-direction: row;
+  font-size: 40px;
+  font-family: Verdana;
+  font-weight: 700;
+  line-height: 49px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sectionGrid .gridText {
+  display: flex;
+  color: #ffffff;
+  flex-direction: row;
+  font-size: 30px;
+  font-family: Verdana;
+  font-weight: 400;
+  line-height: 36px;
+  margin-top: -2rem;
 }/*# sourceMappingURL=style.css.map */
