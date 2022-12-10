@@ -35,12 +35,14 @@ h1 {
 
 h2 {
   @include textBox($white, row, 25px, $fontStack, $fontNormal, 30px);
-  width: 50%;
 }
 
 .text {
   @include textBox($white, row, 20px, $fontStack, $fontNormal, 30px);
-  width: 80%;
+}
+
+.introSection {
+  width: 60%;
 }
 
 .tonedDownText {
@@ -68,13 +70,26 @@ h2 {
   width: 50%;
   li {
     margin-bottom: 4rem;
+    display: inline-block;
+    position: relative;
+    ::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1rem;
+      width: 0;
+      height: 2px;
+      background-color: $white;
+      transition: width 0.5s ease-out;
+    }
+    :hover::before{
+      width: 40%;
+    }
+    a{
+      text-decoration: none;
+      color: $white;
+    }
   }
-}
-
-.contactInfo {
-  border-top: 1px solid;
-  border-color: $wTonedDown;
-  width: 50%;
 }
 
 .info {
@@ -147,6 +162,7 @@ h2 {
 
 .serviceSections {
   margin-top: 10rem;
+  width: 80%;
 }
 
 .furtherInfoBox {
@@ -193,7 +209,6 @@ h2 {
 .sectionGrid {
   display: grid;
   grid-template-columns: auto auto auto;
-  width: 70%;
 
   .sectionGridItem {
     display: flex;
@@ -214,6 +229,9 @@ h2 {
     justify-content: center;
   }
 }
+
+
+
 /*workshop start*/
 ul {
   @include textBox($white, column, 20px, $fontStack, $fontNormal, 30px);

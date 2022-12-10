@@ -26,7 +26,6 @@ h2 {
   font-family: Verdana;
   font-weight: 400;
   line-height: 30px;
-  width: 50%;
 }
 
 .text {
@@ -37,7 +36,10 @@ h2 {
   font-family: Verdana;
   font-weight: 400;
   line-height: 30px;
-  width: 80%;
+}
+
+.introSection {
+  width: 60%;
 }
 
 .tonedDownText {
@@ -78,12 +80,25 @@ h2 {
 }
 .indexNav li {
   margin-bottom: 4rem;
+  display: inline-block;
+  position: relative;
 }
-
-.contactInfo {
-  border-top: 1px solid;
-  border-color: rgba(255, 255, 255, 0.3);
-  width: 50%;
+.indexNav li ::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.5s ease-out;
+}
+.indexNav li :hover::before {
+  width: 40%;
+}
+.indexNav li a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .info {
@@ -178,6 +193,7 @@ h2 {
 
 .serviceSections {
   margin-top: 10rem;
+  width: 80%;
 }
 
 .furtherInfoBox {
@@ -254,7 +270,6 @@ h2 {
 .sectionGrid {
   display: grid;
   grid-template-columns: auto auto auto;
-  width: 70%;
 }
 .sectionGrid .sectionGridItem {
   display: flex;
