@@ -72,7 +72,7 @@ h2 {
     margin-bottom: 4rem;
     display: inline-block;
     position: relative;
-    ::before{
+    ::before {
       content: "";
       position: absolute;
       left: 0;
@@ -82,10 +82,10 @@ h2 {
       background-color: $white;
       transition: width 0.5s ease-out;
     }
-    :hover::before{
+    :hover::before {
       width: 40%;
     }
-    a{
+    a {
       text-decoration: none;
       color: $white;
     }
@@ -230,8 +230,6 @@ h2 {
   }
 }
 
-
-
 /*workshop start*/
 ul {
   @include textBox($white, column, 20px, $fontStack, $fontNormal, 30px);
@@ -283,5 +281,72 @@ span {
   font-size: 80px;
   line-height: 92px;
   color: #61812c;
+}
+@media only screen and (max-width: 480px) {
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .indexHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  h1 {
+    @include textBox($white, row, 20px, $fontStack, $fontNormal, 24px);
+  }
+  .introSection {
+    margin: 0%;
+    width: 80%;
+  }
+  h2 {
+    @include textBox($white, row, 15px, $fontStack, $fontNormal, 24px);
+    width: 100%;
+  }
+
+  .text {
+    @include textBox($white, row, 10px, $fontStack, $fontNormal, 12px);
+  }
+  .workshopFlex {
+    display: block;
+  }
+  ul {
+    @include textBox($white, column, 10px, $fontStack, $fontNormal, 12.5px);
+  }
+  .quote {
+    width: 100%;
+    font-size: 15px;
+    line-height: 36px;
+  }
+  .quote::before {
+    content: open-quote;
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .quote::after {
+    content: close-quote;
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .furtherInfoHeading {
+    @include textBox($darkGreen, column, 20px, $fontStack, $fontNormal, 24px);
+    margin-top: 0px;
+  }
+
+  .sectionGrid {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .gridNumber {
+      @include textBox($lightGreen, row, 15px, $fontStack, $fontBold, 18px);
+    }
+
+    .gridText {
+      @include textBox($white, row, 10px, $fontStack, $fontNormal, 12px);
+      margin-top: 0rem;
+      width: 50px;
+    }
+  }
 }
 /*workshop end*/
