@@ -28,7 +28,7 @@ body {
   margin-left: 8rem;
   margin-right: 8rem;
 }
-
+/*fonts desktop start*/
 h1 {
   @include textBox($white, row, 50px, $fontStack, $fontNormal, 60px);
 }
@@ -36,22 +36,29 @@ h1 {
 h2 {
   @include textBox($white, row, 25px, $fontStack, $fontNormal, 30px);
 }
+h3 {
+  @include textBox($white, row, 40px, $fontStack, $fontBold, 48px);
+}
+h4 {
+  @include textBox($white, row, 40px, $fontStack, $fontNormal, 48px);
+}
 
 .text {
   @include textBox($white, row, 20px, $fontStack, $fontNormal, 30px);
   display: inline-block;
 }
-
-.introSection {
-  width: 60%;
-}
-
 .tonedDownText {
   @include textBox($wTonedDown, row, 20px, $fontStack, $fontNormal, 30px);
   border-bottom: 1px solid;
   border-color: $wTonedDown;
   width: 290px;
 }
+/*fonts desktop end*/
+.introSection {
+  width: 60%;
+}
+
+
 
 .middleSection {
   display: flex;
@@ -158,7 +165,7 @@ h2 {
 }
 
 .infoLine {
-  @include textBox($lightGreen, row, 25px, $fontStack, $fontBold, 30px);
+  @include textBox($lightGreen, row, 20px, $fontStack, $fontBold, 30px);
 }
 
 .serviceSections {
@@ -448,4 +455,20 @@ footer {
   }
 
   /*services mediqquerries end*/
+  /*index media querries*/
+
+  .middleSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    .indexNav {
+      padding: 0%;
+      width: 100%;
+    }
+    img {
+      scale: 0.4;
+      justify-content: center;
+      margin-top: 0rem;
+    }
+  }
 }
