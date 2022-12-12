@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: #070f00;
   margin-left: 8rem;
   margin-right: 8rem;
 }
@@ -39,6 +39,7 @@ h2 {
 
 .text {
   @include textBox($white, row, 20px, $fontStack, $fontNormal, 30px);
+  display: inline-block;
 }
 
 .introSection {
@@ -208,28 +209,26 @@ h2 {
 
 .sectionGrid {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
 
   .sectionGridItem {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-
-  .gridNumber {
-    @include textBox($lightGreen, row, 40px, $fontStack, $fontBold, 49px);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .gridText {
-    @include textBox($white, row, 30px, $fontStack, $fontNormal, 36px);
-    margin-top: -2rem;
-    justify-content: center;
-  }
+}
+.gridNumber {
+  @include textBox($lightGreen, row, 40px, $fontStack, $fontBold, 49px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.gridText {
+  @include textBox($white, row, 30px, $fontStack, $fontNormal, 36px);
+  margin-top: -2rem;
+  justify-content: center;
+}
 /*workshop start*/
 ul {
   @include textBox($white, column, 20px, $fontStack, $fontNormal, 30px);
@@ -243,7 +242,7 @@ ul {
   width: 100%;
 }
 .quote {
-  width: 60%;
+  width: 70%;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -281,6 +280,50 @@ span {
   font-size: 80px;
   line-height: 92px;
   color: #61812c;
+}
+.testimonialSectionDesktop {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 780px;
+}
+/*workshop end*/
+/*about us start*/
+
+.previosProjectsTextFlex {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.gain {
+  margin-top: 1.4rem;
+  padding-left: 10rem;
+}
+.whatWeDid {
+  margin-top: -1rem;
+}
+hr {
+  width: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+footer {
+  @include textBox(#cfd7bf, row, 20px, $fontStack, $fontNormal, 24px);
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  p {
+    margin: 2px;
+  }
+  svg {
+    margin-top: 2rem;
+  }
+}
+/*about us end*/
+/*about us mediqquerries start*/
+@media only screen and (min-width: 1024px) {
+  .testimonialSectionMobile {
+    display: none;
+  }
 }
 @media only screen and (max-width: 480px) {
   body {
@@ -328,25 +371,56 @@ span {
     font-size: 40px;
     line-height: 46px;
   }
+
   .furtherInfoHeading {
     @include textBox($darkGreen, column, 20px, $fontStack, $fontNormal, 24px);
     margin-top: 0px;
   }
-
+  .testimonialSectionDesktop {
+    display: none;
+  }
+  .testimonialSectionMobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
   .sectionGrid {
     display: flex;
     justify-content: space-between;
     grid-template-columns: 1fr 1fr 1fr;
-
-    .gridNumber {
-      @include textBox($lightGreen, row, 15px, $fontStack, $fontBold, 18px);
-    }
-
-    .gridText {
-      @include textBox($white, row, 10px, $fontStack, $fontNormal, 12px);
-      margin-top: 0rem;
-      width: 50px;
-    }
   }
+  .gridNumber {
+    @include textBox($lightGreen, row, 15px, $fontStack, $fontBold, 18px);
+  }
+
+  .gridText {
+    @include textBox($white, row, 10px, $fontStack, $fontNormal, 12px);
+    margin-top: 0rem;
+    width: 100px;
+  }
+  /*about us mediqquerries end*/
+  /*about us mediaquerries start*/
+  .previosProjectsTextFlex {
+    display: block;
+  }
+
+  .gain {
+    margin-top: 1.4rem;
+    padding-left: 0rem;
+    display: block;
+    width: fit-content;
+    margin: auto;
+  }
+  .gain > * {
+    justify-content: center;
+    text-align: center;
+    width: 170px;
+  }
+  hr {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  /*about us mediaquerries end*/
 }
-/*workshop end*/
