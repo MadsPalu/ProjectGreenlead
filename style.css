@@ -422,9 +422,17 @@ footer svg {
 }
 
 /*about us end*/
+/*services  start*/
+.hrMobile {
+  width: 100%;
+}
+
+/*services  end*/
 /*about us mediqquerries start*/
 @media only screen and (min-width: 1024px) {
-  .testimonialSectionMobile {
+  .testimonialSectionMobile,
+details,
+summary {
     display: none;
   }
 }
@@ -566,4 +574,21 @@ footer svg {
     display: none;
   }
   /*about us mediaquerries end*/
+  /*services mediqquerries start*/
+  .anchorMenu,
+.serviceNav,
+.serviceSections {
+    display: none;
+  }
+  summary {
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  summary svg {
+    width: 40px;
+    height: 40px;
+  }
+  /*services mediqquerries end*/
 }/*# sourceMappingURL=style.css.map */
