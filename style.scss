@@ -108,6 +108,14 @@ h2 {
 
 .logo1 {
   width: 50%;
+  display: flex;
+  flex-direction: row;
+  a{
+    @include textBox($white, row, 20px, $fontStack, $fontBold, 15px);
+    margin-top: 3rem;
+    margin-right: 2rem;
+    text-decoration: none;
+  }
 }
 
 .logo2 {
@@ -473,5 +481,18 @@ footer {
     }
   }
 
+  .logo1{
+    a{
+      font-size: 12px;
+    }
+  }
+
+  .logo2{
+    display: none;
+  }
+
+  .indexArt{
+    display: none;
+  }
   /*services mediqquerries end*/
 }

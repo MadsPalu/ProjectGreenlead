@@ -123,6 +123,20 @@ h2 {
 
 .logo1 {
   width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+.logo1 a {
+  display: flex;
+  color: #ffffff;
+  flex-direction: row;
+  font-size: 20px;
+  font-family: Verdana;
+  font-weight: 700;
+  line-height: 15px;
+  margin-top: 3rem;
+  margin-right: 2rem;
+  text-decoration: none;
 }
 
 .logo2 {
@@ -619,6 +633,15 @@ summary {
   summary svg {
     width: 40px;
     height: 40px;
+  }
+  .logo1 a {
+    font-size: 12px;
+  }
+  .logo2 {
+    display: none;
+  }
+  .indexArt {
+    display: none;
   }
   /*services mediqquerries end*/
 }/*# sourceMappingURL=style.css.map */
