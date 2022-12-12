@@ -170,6 +170,10 @@ h2 {
   display: flex;
   flex-direction: column;
   text-align: center;
+  a{
+    text-decoration: none;
+    padding-top: 1.5rem;
+  }
 }
 
 .furtherInfoText {
@@ -229,6 +233,28 @@ h2 {
   margin-top: -2rem;
   justify-content: center;
 }
+
+#mailForm{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 80%;
+  margin-top: 5rem;
+}
+
+.mailFormInput{
+  @include textBox($offWhite, row, 25px, $fontStack, $fontNormal, 30px);
+  background-color: rgba($color: #000000, $alpha: 0);
+  border: $offWhite solid 3px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.formMsg{
+  padding-bottom: 20rem;
+}
+
+
 /*workshop start*/
 ul {
   @include textBox($white, column, 20px, $fontStack, $fontNormal, 30px);

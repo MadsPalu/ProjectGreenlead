@@ -99,7 +99,7 @@
             <div class="sectionGridItem">
                 <p class="gridNumber">03.</p>
                 <p class="gridText">Ensuring financial viability of project</p>
-            </div>   
+            </div>
     </section>
 <details>
     <summary> <h1>01. Hydropower Investment in Greenland</h1> <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -618,7 +618,7 @@
                 <p class="gridNumber">03.</p>
                 <p class="gridText">Supporting systems for utility</p>
             </div>
-            </div>
+        </div>
     </section>
 <details>
     <summary><h1>06. Consulting & Guidance</h1>
@@ -726,11 +726,23 @@
         </a>
         <div class="furtherInfoBox">
             <p class="furtherInfoText">For further information & arrangement</p>
-            <button class="emailBtn">
+            <a href="#mailForm" class="emailBtn">
                 Send Mail
-            </button>
+            </a>
         </div>
     </nav>
+    <form id="mailForm">
+        <input type="text" class="mailFormInput formName" placeholder="Name">
+        <input type="text" class="mailFormInput formEmail" placeholder="E-mail">
+        <input type="text" class="mailFormInput formTele" placeholder="Telephone">
+        <input type="text" class="mailFormInput formSubject" placeholder="Subject">
+        <input type="text" class="mailFormInput formMsg" placeholder="Enter your message">
+        <button type="submit" class="emailBtn">Send</button>
+    </form>
 </body>
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="main.js"></script>
 
 </html>

@@ -202,6 +202,10 @@ h2 {
   flex-direction: column;
   text-align: center;
 }
+.furtherInfoBox a {
+  text-decoration: none;
+  padding-top: 1.5rem;
+}
 
 .furtherInfoText {
   display: flex;
@@ -301,6 +305,32 @@ h2 {
   line-height: 36px;
   margin-top: -2rem;
   justify-content: center;
+}
+
+#mailForm {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 80%;
+  margin-top: 5rem;
+}
+
+.mailFormInput {
+  display: flex;
+  color: #cfd7bf;
+  flex-direction: row;
+  font-size: 25px;
+  font-family: Verdana;
+  font-weight: 400;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  border: #cfd7bf solid 3px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.formMsg {
+  padding-bottom: 20rem;
 }
 
 /*workshop start*/
