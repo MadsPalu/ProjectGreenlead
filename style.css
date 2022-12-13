@@ -101,7 +101,7 @@ h4 {
   transition: width 0.5s ease-out;
 }
 .indexNav li :hover::before {
-  width: 40%;
+  width: 20rem;
 }
 .indexNav li a {
   text-decoration: none;
