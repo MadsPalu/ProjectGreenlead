@@ -186,6 +186,7 @@ footer {
   }
   .text {
     @include textBox($white, row, 12px, $fontStack, $fontNormal, 14px);
+    display: inline-block;
   }
   .indexNav {
     @include textBox($white, column, 30px, $fontStack, $fontBold, 36px);
@@ -225,6 +226,13 @@ footer {
     @include textBox($white, row, 12px, $fontStack, $fontNormal, 14px);
     margin-top: 0rem;
     width: 100px;
+  }
+  footer {
+    @include textBox(#cfd7bf, row, 10px, $fontStack, $fontNormal, 12.5px);
+    svg {
+      width: 20px;
+      margin-top: 4px;
+    }
   }
 }
 /*mobile fonts end*/
@@ -535,6 +543,7 @@ hr {
       margin-top: 4px;
     }
   }
+
   /*about us mediaquerries end*/
   /*services mediqquerries start*/
   .anchorMenu,

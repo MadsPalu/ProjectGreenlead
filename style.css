@@ -335,6 +335,7 @@ footer svg {
     font-family: Verdana;
     font-weight: 400;
     line-height: 14px;
+    display: inline-block;
   }
   .indexNav {
     display: flex;
@@ -432,6 +433,19 @@ footer svg {
     line-height: 14px;
     margin-top: 0rem;
     width: 100px;
+  }
+  footer {
+    display: flex;
+    color: #cfd7bf;
+    flex-direction: row;
+    font-size: 10px;
+    font-family: Verdana;
+    font-weight: 400;
+    line-height: 12.5px;
+  }
+  footer svg {
+    width: 20px;
+    margin-top: 4px;
   }
 }
 /*mobile fonts end*/
