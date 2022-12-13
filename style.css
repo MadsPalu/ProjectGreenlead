@@ -83,6 +83,7 @@ h4 {
   line-height: 30px;
   list-style: none;
   width: 50%;
+  padding-left: 0%;
 }
 .indexNav li {
   margin-bottom: 4rem;
@@ -121,35 +122,6 @@ h4 {
   margin-top: 0.5rem;
 }
 
-.indexHeader {
-  display: flex;
-  flex-direction: row;
-}
-
-.logo1 {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-}
-.logo1 a {
-  display: flex;
-  color: #ffffff;
-  flex-direction: row;
-  font-size: 20px;
-  font-family: Verdana;
-  font-weight: 700;
-  line-height: 15px;
-  margin-top: 3rem;
-  margin-right: 2rem;
-  text-decoration: none;
-}
-
-.logo2 {
-  width: 50%;
-  display: flex;
-  justify-content: right;
-}
-
 .anchorNumber {
   display: flex;
   color: rgba(255, 255, 255, 0.3);
@@ -179,21 +151,6 @@ h4 {
   font-family: Verdana;
   font-weight: 700;
   line-height: 30px;
-}
-
-.serviceSections {
-  margin-top: 10rem;
-  width: 80%;
-}
-
-.furtherInfoBox {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.furtherInfoBox a {
-  text-decoration: none;
-  padding-top: 1.5rem;
 }
 
 .furtherInfoText {
@@ -286,33 +243,7 @@ h4 {
   justify-content: center;
 }
 
-#mailForm {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  width: 80%;
-  margin-top: 5rem;
-}
-
-.mailFormInput {
-  display: flex;
-  color: #cfd7bf;
-  flex-direction: row;
-  font-size: 25px;
-  font-family: Verdana;
-  font-weight: 400;
-  line-height: 30px;
-  background-color: rgba(0, 0, 0, 0);
-  border: #cfd7bf solid 3px;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.formMsg {
-  padding-bottom: 20rem;
-}
-
-/*workshop start*/
+/*workshop fonts*/
 ul {
   display: flex;
   color: #ffffff;
@@ -527,6 +458,20 @@ footer svg {
 
 .logo1 {
   width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+.logo1 a {
+  display: flex;
+  color: #ffffff;
+  flex-direction: row;
+  font-size: 20px;
+  font-family: Verdana;
+  font-weight: 700;
+  line-height: 15px;
+  margin-top: 3rem;
+  margin-right: 2rem;
+  text-decoration: none;
 }
 
 .logo2 {
@@ -575,6 +520,10 @@ footer svg {
   flex-direction: column;
   text-align: center;
 }
+.furtherInfoBox a {
+  text-decoration: none;
+  padding-top: 1.5rem;
+}
 
 .sectionGrid {
   display: grid;
@@ -584,6 +533,52 @@ footer svg {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+#mailForm {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 80%;
+  margin-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+.mailFormInput {
+  display: flex;
+  color: #cfd7bf;
+  flex-direction: row;
+  font-size: 25px;
+  font-family: Verdana;
+  font-weight: 400;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  border: #cfd7bf solid 3px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.formMsg {
+  padding-bottom: 20rem;
+}
+
+.contactInfoHome {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.contactInfoHome svg {
+  margin-top: 14px;
+}
+
+.contactInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.contactInfo svg {
+  margin-top: 14px;
 }
 
 /*workshop start*/
@@ -660,8 +655,14 @@ span {
 }
 
 hr {
-  width: 50%;
+  width: 60%;
   border: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-margin-start: 0%;
+          margin-inline-start: 0%;
+}
+
+.longHr {
+  width: 100%;
 }
 
 /*about us end*/
@@ -743,11 +744,20 @@ summary {
     text-align: center;
     width: 170px;
   }
-  hr {
-    display: none;
-  }
   footer {
-    display: none;
+    display: block;
+  }
+  .contactInfoHome {
+    width: 100%;
+  }
+  .contactInfoHome svg {
+    margin-top: 10px;
+  }
+  .contactInfo {
+    width: 100%;
+  }
+  .contactInfo svg {
+    margin-top: 4px;
   }
   /*about us mediaquerries end*/
   /*services mediqquerries start*/
