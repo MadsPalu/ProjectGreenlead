@@ -8,6 +8,7 @@ body {
   margin-right: 8rem;
 }
 
+/*fonts desktop start*/
 h1 {
   display: flex;
   color: #ffffff;
@@ -28,6 +29,26 @@ h2 {
   line-height: 30px;
 }
 
+h3 {
+  display: flex;
+  color: #ffffff;
+  flex-direction: row;
+  font-size: 40px;
+  font-family: Verdana;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+h4 {
+  display: flex;
+  color: #ffffff;
+  flex-direction: row;
+  font-size: 40px;
+  font-family: Verdana;
+  font-weight: 400;
+  line-height: 48px;
+}
+
 .text {
   display: flex;
   color: #ffffff;
@@ -37,10 +58,6 @@ h2 {
   font-weight: 400;
   line-height: 30px;
   display: inline-block;
-}
-
-.introSection {
-  width: 60%;
 }
 
 .tonedDownText {
@@ -56,25 +73,13 @@ h2 {
   width: 290px;
 }
 
-.middleSection {
-  display: flex;
-}
-
-.indexArt {
-  width: 50%;
-  display: flex;
-  flex: row;
-  justify-content: right;
-  margin-top: -12rem;
-}
-
 .indexNav {
   display: flex;
   color: #ffffff;
   flex-direction: column;
   font-size: 50px;
   font-family: Verdana;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 30px;
   list-style: none;
   width: 50%;
@@ -166,41 +171,11 @@ h2 {
   margin-top: -2rem;
 }
 
-.navSection {
-  display: flex;
-  flex-direction: row;
-}
-
-.anchorMenu {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-  width: 100%;
-}
-
-.anchorMenuItem {
-  text-decoration: none;
-  justify-content: right;
-}
-
-.anchorMenuItem:hover p {
-  color: #ffffff;
-}
-
-.anchorMenuItem:active {
-  color: #ffffff;
-}
-
-.servicePicContainer {
-  width: 30%;
-  justify-content: right;
-}
-
 .infoLine {
   display: flex;
   color: #9ac71b;
   flex-direction: row;
-  font-size: 25px;
+  font-size: 20px;
   font-family: Verdana;
   font-weight: 700;
   line-height: 30px;
@@ -286,16 +261,6 @@ h2 {
   margin-bottom: 2rem;
 }
 
-.sectionGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.sectionGrid .sectionGridItem {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
 .gridNumber {
   display: flex;
   color: #9ac71b;
@@ -369,6 +334,259 @@ ul {
   margin-top: -40px;
 }
 
+/*workshop fonts end*/
+footer {
+  display: flex;
+  color: #cfd7bf;
+  flex-direction: row;
+  font-size: 20px;
+  font-family: Verdana;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+footer p {
+  margin: 2px;
+}
+footer svg {
+  margin-top: 2rem;
+}
+
+/*fonts desktop end*/
+/*mobile fonts start*/
+@media only screen and (max-width: 480px) {
+  h1 {
+    display: flex;
+    color: #ffffff;
+    flex-direction: row;
+    font-size: 25px;
+    font-family: Verdana;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  h2 {
+    display: flex;
+    color: #ffffff;
+    flex-direction: row;
+    font-size: 18px;
+    font-family: Verdana;
+    font-weight: 400;
+    line-height: 22px;
+    width: 100%;
+  }
+  h3 {
+    display: flex;
+    color: #ffffff;
+    flex-direction: row;
+    font-size: 18px;
+    font-family: Verdana;
+    font-weight: 700;
+    line-height: 22px;
+    width: 100%;
+  }
+  h4 {
+    display: flex;
+    color: #ffffff;
+    flex-direction: row;
+    font-size: 18px;
+    font-family: Verdana;
+    font-weight: 400;
+    line-height: 22px;
+    width: 100%;
+  }
+  .text {
+    display: flex;
+    color: #ffffff;
+    flex-direction: row;
+    font-size: 12px;
+    font-family: Verdana;
+    font-weight: 400;
+    line-height: 14px;
+  }
+  .indexNav {
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    font-size: 30px;
+    font-family: Verdana;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  .tonedDownText {
+    display: flex;
+    color: rgba(255, 255, 255, 0.3);
+    flex-direction: row;
+    font-size: 12px;
+    font-family: Verdana;
+    font-weight: 400;
+    line-height: 15px;
+  }
+  .info {
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    font-size: 10px;
+    font-family: Verdana;
+    font-weight: 400;
+    line-height: 12px;
+  }
+  ul {
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    font-size: 12px;
+    font-family: Verdana;
+    font-weight: 400;
+    line-height: 14.5px;
+  }
+  .furtherInfoHeading {
+    display: flex;
+    color: #61812c;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: Verdana;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 0px;
+  }
+  .furtherInfoText {
+    display: flex;
+    color: #61812c;
+    flex-direction: column;
+    font-size: 10px;
+    font-family: Verdana;
+    font-weight: 400;
+    line-height: 12px;
+  }
+  .emailBtn {
+    width: 114px;
+    display: flex;
+    color: #ffffff;
+    flex-direction: none;
+    font-size: 15px;
+    font-family: Verdana;
+    font-weight: 700;
+    line-height: 18px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .infoLine {
+    display: flex;
+    color: #9ac71b;
+    flex-direction: row;
+    font-size: 10px;
+    font-family: Verdana;
+    font-weight: 700;
+    line-height: 12px;
+  }
+  .gridNumber {
+    display: flex;
+    color: #9ac71b;
+    flex-direction: row;
+    font-size: 18px;
+    font-family: Verdana;
+    font-weight: 700;
+    line-height: 21px;
+  }
+  .gridText {
+    display: flex;
+    color: #ffffff;
+    flex-direction: row;
+    font-size: 12px;
+    font-family: Verdana;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 0rem;
+    width: 100px;
+  }
+}
+/*mobile fonts end*/
+.introSection {
+  width: 60%;
+}
+
+.middleSection {
+  display: flex;
+}
+
+.indexArt {
+  width: 50%;
+  display: flex;
+  flex: row;
+  justify-content: right;
+  margin-top: -12rem;
+}
+
+.indexHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo1 {
+  width: 50%;
+}
+
+.logo2 {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+}
+
+.navSection {
+  display: flex;
+  flex-direction: row;
+}
+
+.anchorMenu {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  width: 100%;
+}
+
+.anchorMenuItem {
+  text-decoration: none;
+  justify-content: right;
+}
+
+.anchorMenuItem:hover p {
+  color: #ffffff;
+}
+
+.anchorMenuItem:active {
+  color: #ffffff;
+}
+
+.servicePicContainer {
+  width: 30%;
+  justify-content: right;
+}
+
+.serviceSections {
+  margin-top: 10rem;
+  width: 80%;
+}
+
+.furtherInfoBox {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sectionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.sectionGrid .sectionGridItem {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/*workshop start*/
 .workshopFlex {
   display: flex;
   width: 100%;
@@ -446,25 +664,6 @@ hr {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-footer {
-  display: flex;
-  color: #cfd7bf;
-  flex-direction: row;
-  font-size: 20px;
-  font-family: Verdana;
-  font-weight: 400;
-  line-height: 24px;
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-}
-footer p {
-  margin: 2px;
-}
-footer svg {
-  margin-top: 2rem;
-}
-
 /*about us end*/
 /*services  start*/
 .hrMobile {
@@ -490,49 +689,12 @@ summary {
     display: flex;
     justify-content: space-between;
   }
-  h1 {
-    display: flex;
-    color: #ffffff;
-    flex-direction: row;
-    font-size: 20px;
-    font-family: Verdana;
-    font-weight: 400;
-    line-height: 24px;
-  }
   .introSection {
     margin: 0%;
     width: 80%;
   }
-  h2 {
-    display: flex;
-    color: #ffffff;
-    flex-direction: row;
-    font-size: 15px;
-    font-family: Verdana;
-    font-weight: 400;
-    line-height: 24px;
-    width: 100%;
-  }
-  .text {
-    display: flex;
-    color: #ffffff;
-    flex-direction: row;
-    font-size: 10px;
-    font-family: Verdana;
-    font-weight: 400;
-    line-height: 12px;
-  }
   .workshopFlex {
     display: block;
-  }
-  ul {
-    display: flex;
-    color: #ffffff;
-    flex-direction: column;
-    font-size: 10px;
-    font-family: Verdana;
-    font-weight: 400;
-    line-height: 12.5px;
   }
   .quote {
     width: 100%;
@@ -549,16 +711,6 @@ summary {
     font-size: 40px;
     line-height: 46px;
   }
-  .furtherInfoHeading {
-    display: flex;
-    color: #61812c;
-    flex-direction: column;
-    font-size: 20px;
-    font-family: Verdana;
-    font-weight: 400;
-    line-height: 24px;
-    margin-top: 0px;
-  }
   .testimonialSectionDesktop {
     display: none;
   }
@@ -571,26 +723,6 @@ summary {
     display: flex;
     justify-content: space-between;
     grid-template-columns: 1fr 1fr 1fr;
-  }
-  .gridNumber {
-    display: flex;
-    color: #9ac71b;
-    flex-direction: row;
-    font-size: 15px;
-    font-family: Verdana;
-    font-weight: 700;
-    line-height: 18px;
-  }
-  .gridText {
-    display: flex;
-    color: #ffffff;
-    flex-direction: row;
-    font-size: 10px;
-    font-family: Verdana;
-    font-weight: 400;
-    line-height: 12px;
-    margin-top: 0rem;
-    width: 100px;
   }
   /*about us mediqquerries end*/
   /*about us mediaquerries start*/
@@ -644,4 +776,19 @@ summary {
     display: none;
   }
   /*services mediqquerries end*/
+  /*index media querries*/
+  .middleSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  .middleSection .indexNav {
+    padding: 0%;
+    width: 100%;
+  }
+  .middleSection img {
+    scale: 0.4;
+    justify-content: center;
+    margin-top: 0rem;
+  }
 }/*# sourceMappingURL=style.css.map */

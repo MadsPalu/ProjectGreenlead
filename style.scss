@@ -28,7 +28,7 @@ body {
   margin-left: 8rem;
   margin-right: 8rem;
 }
-
+/*fonts desktop start*/
 h1 {
   @include textBox($white, row, 50px, $fontStack, $fontNormal, 60px);
 }
@@ -36,37 +36,25 @@ h1 {
 h2 {
   @include textBox($white, row, 25px, $fontStack, $fontNormal, 30px);
 }
+h3 {
+  @include textBox($white, row, 40px, $fontStack, $fontBold, 48px);
+}
+h4 {
+  @include textBox($white, row, 40px, $fontStack, $fontNormal, 48px);
+}
 
 .text {
   @include textBox($white, row, 20px, $fontStack, $fontNormal, 30px);
   display: inline-block;
 }
-
-.introSection {
-  width: 60%;
-}
-
 .tonedDownText {
   @include textBox($wTonedDown, row, 20px, $fontStack, $fontNormal, 30px);
   border-bottom: 1px solid;
   border-color: $wTonedDown;
   width: 290px;
 }
-
-.middleSection {
-  display: flex;
-}
-
-.indexArt {
-  width: 50%;
-  display: flex;
-  flex: row;
-  justify-content: right;
-  margin-top: -12rem;
-}
-
 .indexNav {
-  @include textBox($white, column, 50px, $fontStack, $fontNormal, 30px);
+  @include textBox($white, column, 50px, $fontStack, $fontBold, 30px);
   list-style: none;
   width: 50%;
   li {
@@ -92,7 +80,6 @@ h2 {
     }
   }
 }
-
 .info {
   @include textBox($white, column, 15px, $fontStack, $fontNormal, 30px);
   a {
@@ -100,30 +87,6 @@ h2 {
     margin-top: 0.5rem;
   }
 }
-
-.indexHeader {
-  display: flex;
-  flex-direction: row;
-}
-
-.logo1 {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  a{
-    @include textBox($white, row, 20px, $fontStack, $fontBold, 15px);
-    margin-top: 3rem;
-    margin-right: 2rem;
-    text-decoration: none;
-  }
-}
-
-.logo2 {
-  width: 50%;
-  display: flex;
-  justify-content: right;
-}
-
 .anchorNumber {
   @include textBox($wTonedDown, row, 40px, $fontStack, $fontBold, 50px);
 }
@@ -132,58 +95,9 @@ h2 {
   @include textBox($wTonedDown, row, 20px, $fontStack, $fontNormal, 24px);
   margin-top: -2rem;
 }
-
-.navSection {
-  display: flex;
-  flex-direction: row;
-}
-
-.anchorMenu {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-  width: 100%;
-}
-
-.anchorMenuItem {
-  text-decoration: none;
-  justify-content: right;
-}
-
-.anchorMenuItem:hover {
-  p {
-    color: $white;
-  }
-}
-
-.anchorMenuItem:active {
-  color: $white;
-}
-
-.servicePicContainer {
-  width: 30%;
-  justify-content: right;
-}
-
 .infoLine {
-  @include textBox($lightGreen, row, 25px, $fontStack, $fontBold, 30px);
+  @include textBox($lightGreen, row, 20px, $fontStack, $fontBold, 30px);
 }
-
-.serviceSections {
-  margin-top: 10rem;
-  width: 80%;
-}
-
-.furtherInfoBox {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  a{
-    text-decoration: none;
-    padding-top: 1.5rem;
-  }
-}
-
 .furtherInfoText {
   @include textBox($darkGreen, column, 15px, $fontStack, $fontNormal, 18px);
 }
@@ -218,6 +132,186 @@ h2 {
     margin-bottom: 2rem;
   }
 }
+.gridNumber {
+  @include textBox($lightGreen, row, 40px, $fontStack, $fontBold, 49px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gridText {
+  @include textBox($white, row, 30px, $fontStack, $fontNormal, 36px);
+  margin-top: -2rem;
+  justify-content: center;
+}
+/*workshop fonts*/
+ul {
+  @include textBox($white, column, 20px, $fontStack, $fontNormal, 30px);
+}
+.furtherInfoHeading {
+  @include textBox($darkGreen, column, 40px, $fontStack, $fontNormal, 49px);
+  margin-top: -40px;
+}
+/*workshop fonts end*/
+footer {
+  @include textBox(#cfd7bf, row, 20px, $fontStack, $fontNormal, 24px);
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  p {
+    margin: 2px;
+  }
+  svg {
+    margin-top: 2rem;
+  }
+}
+/*fonts desktop end*/
+/*mobile fonts start*/
+@media only screen and (max-width: 480px) {
+  h1 {
+    @include textBox($white, row, 25px, $fontStack, $fontNormal, 30px);
+  }
+  h2 {
+    @include textBox($white, row, 18px, $fontStack, $fontNormal, 22px);
+    width: 100%;
+  }
+  h3 {
+    @include textBox($white, row, 18px, $fontStack, $fontBold, 22px);
+    width: 100%;
+  }
+  h4 {
+    @include textBox($white, row, 18px, $fontStack, $fontNormal, 22px);
+    width: 100%;
+  }
+  .text {
+    @include textBox($white, row, 12px, $fontStack, $fontNormal, 14px);
+  }
+  .indexNav {
+    @include textBox($white, column, 30px, $fontStack, $fontBold, 36px);
+  }
+  .tonedDownText {
+    @include textBox($wTonedDown, row, 12px, $fontStack, $fontNormal, 15px);
+  }
+  .info {
+    @include textBox($white, column, 10px, $fontStack, $fontNormal, 12px);
+  }
+  ul {
+    @include textBox($white, column, 12px, $fontStack, $fontNormal, 14.5px);
+  }
+  .furtherInfoHeading {
+    @include textBox($darkGreen, column, 18px, $fontStack, $fontNormal, 21px);
+    margin-top: 0px;
+  }
+  .furtherInfoText {
+    @include textBox($darkGreen, column, 10px, $fontStack, $fontNormal, 12px);
+  }
+
+  .emailBtn {
+    width: 114px;
+    @include textBox($white, none, 15px, $fontStack, $fontBold, 18px);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .infoLine {
+    @include textBox($lightGreen, row, 10px, $fontStack, $fontBold, 12px);
+  }
+  .gridNumber {
+    @include textBox($lightGreen, row, 18px, $fontStack, $fontBold, 21px);
+  }
+
+  .gridText {
+    @include textBox($white, row, 12px, $fontStack, $fontNormal, 14px);
+    margin-top: 0rem;
+    width: 100px;
+  }
+}
+/*mobile fonts end*/
+.introSection {
+  width: 60%;
+}
+
+.middleSection {
+  display: flex;
+}
+
+.indexArt {
+  width: 50%;
+  display: flex;
+  flex: row;
+  justify-content: right;
+  margin-top: -12rem;
+}
+
+.indexHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo1 {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  a{
+    @include textBox($white, row, 20px, $fontStack, $fontBold, 15px);
+    margin-top: 3rem;
+    margin-right: 2rem;
+    text-decoration: none;
+  }
+}
+
+.logo2 {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+}
+
+.navSection {
+  display: flex;
+  flex-direction: row;
+}
+
+.anchorMenu {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  width: 100%;
+}
+
+.anchorMenuItem {
+  text-decoration: none;
+  justify-content: right;
+}
+
+.anchorMenuItem:hover {
+  p {
+    color: $white;
+  }
+}
+
+.anchorMenuItem:active {
+  color: $white;
+}
+
+.servicePicContainer {
+  width: 30%;
+  justify-content: right;
+}
+
+.serviceSections {
+  margin-top: 10rem;
+  width: 80%;
+}
+
+.furtherInfoBox {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  a{
+    text-decoration: none;
+    padding-top: 1.5rem;
+  }
+}
 
 .sectionGrid {
   display: grid;
@@ -228,12 +322,6 @@ h2 {
     flex-direction: column;
     text-align: center;
   }
-}
-.gridNumber {
-  @include textBox($lightGreen, row, 40px, $fontStack, $fontBold, 49px);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .gridText {
@@ -264,13 +352,6 @@ h2 {
 
 
 /*workshop start*/
-ul {
-  @include textBox($white, column, 20px, $fontStack, $fontNormal, 30px);
-}
-.furtherInfoHeading {
-  @include textBox($darkGreen, column, 40px, $fontStack, $fontNormal, 49px);
-  margin-top: -40px;
-}
 .workshopFlex {
   display: flex;
   width: 100%;
@@ -340,18 +421,7 @@ hr {
   width: 50%;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-footer {
-  @include textBox(#cfd7bf, row, 20px, $fontStack, $fontNormal, 24px);
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  p {
-    margin: 2px;
-  }
-  svg {
-    margin-top: 2rem;
-  }
-}
+
 /*about us end*/
 /*services  start*/
 .hrMobile {
@@ -376,27 +446,16 @@ footer {
     display: flex;
     justify-content: space-between;
   }
-  h1 {
-    @include textBox($white, row, 20px, $fontStack, $fontNormal, 24px);
-  }
+
   .introSection {
     margin: 0%;
     width: 80%;
   }
-  h2 {
-    @include textBox($white, row, 15px, $fontStack, $fontNormal, 24px);
-    width: 100%;
-  }
 
-  .text {
-    @include textBox($white, row, 10px, $fontStack, $fontNormal, 12px);
-  }
   .workshopFlex {
     display: block;
   }
-  ul {
-    @include textBox($white, column, 10px, $fontStack, $fontNormal, 12.5px);
-  }
+
   .quote {
     width: 100%;
     font-size: 15px;
@@ -413,10 +472,6 @@ footer {
     line-height: 46px;
   }
 
-  .furtherInfoHeading {
-    @include textBox($darkGreen, column, 20px, $fontStack, $fontNormal, 24px);
-    margin-top: 0px;
-  }
   .testimonialSectionDesktop {
     display: none;
   }
@@ -430,15 +485,7 @@ footer {
     justify-content: space-between;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .gridNumber {
-    @include textBox($lightGreen, row, 15px, $fontStack, $fontBold, 18px);
-  }
 
-  .gridText {
-    @include textBox($white, row, 10px, $fontStack, $fontNormal, 12px);
-    margin-top: 0rem;
-    width: 100px;
-  }
   /*about us mediqquerries end*/
   /*about us mediaquerries start*/
   .previosProjectsTextFlex {
@@ -495,4 +542,20 @@ footer {
     display: none;
   }
   /*services mediqquerries end*/
+  /*index media querries*/
+
+  .middleSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    .indexNav {
+      padding: 0%;
+      width: 100%;
+    }
+    img {
+      scale: 0.4;
+      justify-content: center;
+      margin-top: 0rem;
+    }
+  }
 }
