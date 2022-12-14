@@ -54,7 +54,7 @@ h4 {
   width: 290px;
 }
 .indexNav {
-  @include textBox($white, column, 50px, $fontStack, $fontBold, 30px);
+  @include textBox($wTonedDown, column, 50px, $fontStack, $fontBold, 30px);
   list-style: none;
   width: 50%;
   padding-left: 0%;
@@ -77,10 +77,14 @@ h4 {
     }
     a {
       text-decoration: none;
+      color: $wTonedDown;
+    }
+    :hover{
       color: $white;
     }
   }
 }
+
 .info {
   @include textBox($white, column, 15px, $fontStack, $fontNormal, 30px);
   a {

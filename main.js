@@ -10,11 +10,11 @@ const form = document.getElementById("mailForm");
         Email.send({
             Host: "smtp.elasticemail.com",
             Username: "backupmailforbackup@gmail.com",
-            Password: "6D8DD99823320B55344DBD9567B6EE823BE6",
+            Password: "620B83B57D06919BC9F906B6AE6CB124F6AD",
             To: `${email}`,
             From: "backupmailforbackup@gmail.com",
             Subject: `${subject}`,
-            Body: `${name} <br> ${email} <br> ${tele} <br> ${msg}`,
+            Body: `Thank you for your mail, we will get to you as soon as possible! <br> Best regards, <br> Greenlead`,
         }).then((success) => {
             alert("message sent to your mail!");
         }).catch((error) =>{
