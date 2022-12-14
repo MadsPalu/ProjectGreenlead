@@ -195,6 +195,7 @@ h4 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 60px;
 }
 
 .gridText {
@@ -236,6 +237,8 @@ footer {
   h3 {
     @include textBox($white, row, 18px, $fontStack, $fontBold, 22px);
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   h4 {
     @include textBox($white, row, 18px, $fontStack, $fontNormal, 22px);
@@ -277,6 +280,7 @@ footer {
   }
   .gridNumber {
     @include textBox($lightGreen, row, 18px, $fontStack, $fontBold, 21px);
+    padding-bottom: 0px;
   }
 
   .gridText {
@@ -310,6 +314,10 @@ footer {
 }
 
 .indexHeader {
+  display: flex;
+  flex-direction: row;
+}
+.indexHeader1 {
   display: flex;
   flex-direction: row;
 }
@@ -528,10 +536,12 @@ hr {
     display: flex;
     justify-content: space-between;
   }
-
+  .indexHeader {
+    display: none;
+  }
   .introSection {
     margin: 0%;
-    width: 80%;
+    width: 100%;
   }
 
   .workshopFlex {
@@ -624,10 +634,6 @@ hr {
     a {
       font-size: 12px;
     }
-  }
-
-  .logo2 {
-    display: none;
   }
 
   .indexArt {

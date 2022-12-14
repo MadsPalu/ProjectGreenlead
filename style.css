@@ -294,6 +294,7 @@ h4 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 60px;
 }
 
 .gridText {
@@ -381,6 +382,8 @@ footer svg {
     font-weight: 700;
     line-height: 22px;
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   h4 {
     display: flex;
@@ -487,6 +490,7 @@ footer svg {
     font-family: Verdana;
     font-weight: 700;
     line-height: 21px;
+    padding-bottom: 0px;
   }
   .gridText {
     display: flex;
@@ -531,6 +535,11 @@ footer svg {
 }
 
 .indexHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+.indexHeader1 {
   display: flex;
   flex-direction: row;
 }
@@ -770,9 +779,12 @@ summary,
     display: flex;
     justify-content: space-between;
   }
+  .indexHeader {
+    display: none;
+  }
   .introSection {
     margin: 0%;
-    width: 80%;
+    width: 100%;
   }
   .workshopFlex {
     display: block;
@@ -858,9 +870,6 @@ summary,
   }
   .logo1 a {
     font-size: 12px;
-  }
-  .logo2 {
-    display: none;
   }
   .indexArt {
     display: none;
