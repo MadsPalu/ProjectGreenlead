@@ -8,6 +8,71 @@ body {
   margin-right: 8rem;
 }
 
+/*bootstrap*/
+.container-fluid {
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: #070f00;
+}
+
+.navbar-expand-lg {
+  background-color: #070f00;
+  padding: 0%;
+}
+
+.navbar-toggler {
+  padding: 0%;
+}
+
+.navbar-toggler-icon {
+  width: 50px;
+  color: #ffffff;
+  padding: 0%;
+}
+
+.navbar-toggler-icon {
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+span > * {
+  color: #ffffff;
+}
+
+nav ul {
+  padding-bottom: 40px;
+}
+nav .nav-item {
+  text-decoration: none;
+  padding: 14px;
+  padding-left: 0%;
+}
+nav .nav-item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.navbar {
+  padding: 0%;
+  --bs-navbar-color: none;
+}
+
+.navbar > * {
+  background-color: #070f00;
+  color: #070f00;
+  padding: 0%;
+}
+
+.navbar-toggle {
+  color: #ffffff;
+  width: 100px;
+}
+.navbar-toggle button {
+  width: 100px;
+  color: #ffffff;
+}
+
 /*fonts desktop start*/
 h1 {
   display: flex;
@@ -536,7 +601,7 @@ footer svg {
 }
 .furtherInfoBox a {
   text-decoration: none;
-  padding-top: 1.5rem;
+  padding-top: 0.9rem;
 }
 
 .sectionGrid {
@@ -553,7 +618,7 @@ footer svg {
   display: flex;
   flex-direction: column;
   align-self: center;
-  width: 80%;
+  width: 100%;
   margin-top: 5rem;
   padding-bottom: 3rem;
 }
@@ -690,7 +755,8 @@ hr {
 @media only screen and (min-width: 1024px) {
   .testimonialSectionMobile,
 details,
-summary {
+summary,
+.navbar {
     display: none;
   }
 }
