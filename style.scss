@@ -151,6 +151,7 @@ h4 {
 }
 .anchorNumber {
   @include textBox($wTonedDown, row, 40px, $fontStack, $fontBold, 50px);
+  margin-bottom: 2rem;
 }
 
 .anchorText {
@@ -199,6 +200,7 @@ h4 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2rem;
 }
 
 .gridText {
@@ -240,6 +242,8 @@ footer {
   h3 {
     @include textBox($white, row, 18px, $fontStack, $fontBold, 22px);
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   h4 {
     @include textBox($white, row, 18px, $fontStack, $fontNormal, 22px);
@@ -281,6 +285,7 @@ footer {
   }
   .gridNumber {
     @include textBox($lightGreen, row, 18px, $fontStack, $fontBold, 21px);
+    padding-bottom: 0px;
   }
 
   .gridText {
@@ -317,16 +322,23 @@ footer {
   display: flex;
   flex-direction: row;
 }
+.indexHeader1 {
+  display: flex;
+  flex-direction: row;
+}
 
 .logo1 {
   width: 50%;
   display: flex;
   flex-direction: row;
   a {
-    @include textBox($white, row, 20px, $fontStack, $fontBold, 15px);
+    @include textBox($wTonedDown, row, 20px, $fontStack, $fontBold, 15px);
     margin-top: 3rem;
     margin-right: 2rem;
     text-decoration: none;
+  }
+  a:hover{
+    color: $white;
   }
 }
 
@@ -532,10 +544,12 @@ hr {
     display: flex;
     justify-content: space-between;
   }
-
+  .indexHeader {
+    display: none;
+  }
   .introSection {
     margin: 0%;
-    width: 80%;
+    width: 100%;
   }
 
   .workshopFlex {
@@ -628,10 +642,6 @@ hr {
     a {
       font-size: 12px;
     }
-  }
-
-  .logo2 {
-    display: none;
   }
 
   .indexArt {

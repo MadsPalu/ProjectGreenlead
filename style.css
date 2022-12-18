@@ -198,6 +198,7 @@ h4 {
   font-family: Verdana;
   font-weight: 700;
   line-height: 50px;
+  margin-bottom: 2rem;
 }
 
 .anchorText {
@@ -297,6 +298,7 @@ h4 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2rem;
 }
 
 .gridText {
@@ -384,6 +386,8 @@ footer svg {
     font-weight: 700;
     line-height: 22px;
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   h4 {
     display: flex;
@@ -490,6 +494,7 @@ footer svg {
     font-family: Verdana;
     font-weight: 700;
     line-height: 21px;
+    padding-bottom: 0px;
   }
   .gridText {
     display: flex;
@@ -538,6 +543,11 @@ footer svg {
   flex-direction: row;
 }
 
+.indexHeader1 {
+  display: flex;
+  flex-direction: row;
+}
+
 .logo1 {
   width: 50%;
   display: flex;
@@ -545,7 +555,7 @@ footer svg {
 }
 .logo1 a {
   display: flex;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.3);
   flex-direction: row;
   font-size: 20px;
   font-family: Verdana;
@@ -554,6 +564,9 @@ footer svg {
   margin-top: 3rem;
   margin-right: 2rem;
   text-decoration: none;
+}
+.logo1 a:hover {
+  color: #ffffff;
 }
 
 .logo2 {
@@ -773,9 +786,12 @@ summary,
     display: flex;
     justify-content: space-between;
   }
+  .indexHeader {
+    display: none;
+  }
   .introSection {
     margin: 0%;
-    width: 80%;
+    width: 100%;
   }
   .workshopFlex {
     display: block;
@@ -861,9 +877,6 @@ summary,
   }
   .logo1 a {
     font-size: 12px;
-  }
-  .logo2 {
-    display: none;
   }
   .indexArt {
     display: none;
