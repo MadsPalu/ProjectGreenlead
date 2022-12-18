@@ -525,8 +525,10 @@ span {
 hr {
   width: 60%;
   border: 1px solid rgba(255, 255, 255, 0.5);
+  fill: rgba(255, 255, 255, 0.5);
   margin-inline-start: 0%;
 }
+
 .longHr {
   width: 100%;
 }
@@ -551,6 +553,7 @@ hr {
     margin-left: 10%;
     margin-right: 10%;
   }
+  
   .indexHeader {
     width: 100%;
     display: flex;
@@ -591,6 +594,9 @@ hr {
     display: flex;
     flex-direction: column;
     text-align: center;
+    video {
+      width: 100%;
+    }
   }
   .sectionGrid {
     display: flex;
