@@ -34,10 +34,12 @@ body {
 .container-fluid {
   display: inline-flex;
   justify-content: space-between;
-  background-color: #070f00;
+  img {
+    width: 140px;
+  }
 }
 .navbar-expand-lg {
-  background-color: #070f00;
+  background-color: transparent;
   padding: 0%;
 }
 .navbar-toggler {
@@ -47,13 +49,6 @@ body {
   width: 50px;
   color: #ffffff;
   padding: 0%;
-}
-.navbar-toggler-icon {
-  color: #ffffff;
-  fill: #ffffff;
-}
-span > * {
-  color: #ffffff;
 }
 nav {
   ul {
@@ -70,23 +65,12 @@ nav {
     }
   }
 }
-.navbar {
-  padding: 0%;
-  --bs-navbar-color: none;
-}
 .navbar > * {
+  z-index: 0;
   background-color: #070f00;
-  color: #070f00;
   padding: 0%;
 }
-.navbar-toggle {
-  color: #ffffff;
-  width: 100px;
-  button {
-    width: 100px;
-    color: #ffffff;
-  }
-}
+
 /*fonts desktop start*/
 h1 {
   @include textBox($white, row, 50px, $fontStack, $fontNormal, 60px);
@@ -143,7 +127,7 @@ h4 {
       text-decoration: none;
       color: $wTonedDown;
     }
-    :hover{
+    :hover {
       color: $white;
     }
   }
@@ -239,7 +223,7 @@ footer {
 }
 /*fonts desktop end*/
 /*mobile fonts start*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1023px) {
   h1 {
     @include textBox($white, row, 25px, $fontStack, $fontNormal, 30px);
   }
@@ -266,6 +250,7 @@ footer {
   }
   .tonedDownText {
     @include textBox($wTonedDown, row, 12px, $fontStack, $fontNormal, 15px);
+    padding-top: 1rem;
   }
   .info {
     @include textBox($white, column, 10px, $fontStack, $fontNormal, 12px);
@@ -319,7 +304,7 @@ footer {
 }
 
 .indexArt {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex: row;
   justify-content: right;
@@ -346,7 +331,10 @@ footer {
     margin-right: 2rem;
     text-decoration: none;
   }
-  a:hover{
+  .active {
+    color: $white;
+  }
+  a:hover {
     color: $white;
   }
 }
@@ -419,9 +407,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-self: center;
-  width: 70%;
+  width: 60%;
   margin-top: 5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
+  margin-left: 10%;
 }
 
 .mailFormInput {
@@ -433,7 +422,7 @@ footer {
 }
 
 .formMsg {
-  padding-bottom: 20rem;
+  padding-bottom: 10rem;
 }
 
 .contactInfoHome {
@@ -504,6 +493,8 @@ span {
   flex-direction: column;
   text-align: center;
   max-width: 780px;
+  padding: 24px;
+  padding-top: 0%;
 }
 /*workshop end*/
 /*about us start*/
@@ -517,7 +508,6 @@ span {
   margin-top: 1.4rem;
   padding-left: 10rem;
   display: inline-block;
-  
 }
 .whatWeDid {
   margin-top: -1rem;
@@ -548,16 +538,32 @@ hr {
     display: none;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1023px) {
   body {
     margin-left: 10%;
     margin-right: 10%;
   }
-  
+  .logo2 {
+    img {
+      width: 140px;
+    }
+  }
+  .furtherInfoBox {
+    padding-top: 1rem;
+    a {
+      text-decoration: none;
+      padding-top: 0.9rem;
+    }
+  }
   .indexHeader {
     width: 100%;
     display: flex;
     justify-content: space-between;
+  }
+  .indexArt {
+    width: 100%;
+    display: block;
+    margin-left: 10%;
   }
   .indexHeader {
     display: none;
@@ -616,11 +622,13 @@ hr {
     display: block;
     width: fit-content;
     margin: auto;
+    justify-content: center;
   }
   .gain > * {
     justify-content: center;
     text-align: center;
-    width: 170px;
+    width: 80%;
+    margin-inline: auto;
   }
   footer {
     display: block;
@@ -662,9 +670,6 @@ hr {
     }
   }
 
-  .indexArt {
-    display: none;
-  }
   /*services mediqquerries end*/
   /*index media querries*/
 
@@ -677,9 +682,46 @@ hr {
       width: 100%;
     }
     img {
-      scale: 0.4;
+      scale: 0.6;
       justify-content: center;
-      margin-top: 0rem;
+      margin-top: 1.3rem;
     }
+  }
+}
+/*quick fixes for different sizes*/
+@media only screen and (min-width: 320px) and (max-width: 780px) {
+  .middleSection {
+    img {
+      display: none;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
+  .testimonialSectionDesktop {
+    width: 50%;
+    margin-top: -4rem;
+    height: min-content;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .indexHrMobile {
+    display: none;
+  }
+  .indexHrDesktop {
+    width: 60%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    fill: rgba(255, 255, 255, 0.5);
+    margin-inline-start: 0%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+  .indexHrMobile {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    fill: rgba(255, 255, 255, 0.5);
+    margin-inline-start: 0%;
+  }
+  .indexHrIndex {
+    display: none;
   }
 }

@@ -14,11 +14,13 @@ body {
 .container-fluid {
   display: inline-flex;
   justify-content: space-between;
-  background-color: #070f00;
+}
+.container-fluid img {
+  width: 140px;
 }
 
 .navbar-expand-lg {
-  background-color: #070f00;
+  background-color: transparent;
   padding: 0%;
 }
 
@@ -30,15 +32,6 @@ body {
   width: 50px;
   color: #ffffff;
   padding: 0%;
-}
-
-.navbar-toggler-icon {
-  color: #ffffff;
-  fill: #ffffff;
-}
-
-span > * {
-  color: #ffffff;
 }
 
 nav ul {
@@ -55,24 +48,10 @@ nav .nav-item a {
   font-size: 20px;
 }
 
-.navbar {
-  padding: 0%;
-  --bs-navbar-color: none;
-}
-
 .navbar > * {
+  z-index: 0;
   background-color: #070f00;
-  color: #070f00;
   padding: 0%;
-}
-
-.navbar-toggle {
-  color: #ffffff;
-  width: 100px;
-}
-.navbar-toggle button {
-  width: 100px;
-  color: #ffffff;
 }
 
 /*fonts desktop start*/
@@ -365,7 +344,7 @@ footer svg {
 
 /*fonts desktop end*/
 /*mobile fonts start*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1023px) {
   h1 {
     display: flex;
     color: #ffffff;
@@ -434,6 +413,7 @@ footer svg {
     font-family: Verdana;
     font-weight: 400;
     line-height: 15px;
+    padding-top: 1rem;
   }
   .info {
     display: flex;
@@ -539,7 +519,7 @@ footer svg {
 }
 
 .indexArt {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex: row;
   justify-content: right;
@@ -573,6 +553,9 @@ footer svg {
   margin-top: 3rem;
   margin-right: 2rem;
   text-decoration: none;
+}
+.logo1 .active {
+  color: #ffffff;
 }
 .logo1 a:hover {
   color: #ffffff;
@@ -643,9 +626,10 @@ footer svg {
   display: flex;
   flex-direction: column;
   align-self: center;
-  width: 70%;
+  width: 60%;
   margin-top: 5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
+  margin-left: 10%;
 }
 
 .mailFormInput {
@@ -663,7 +647,7 @@ footer svg {
 }
 
 .formMsg {
-  padding-bottom: 20rem;
+  padding-bottom: 10rem;
 }
 
 .contactInfoHome {
@@ -741,6 +725,8 @@ span {
   flex-direction: column;
   text-align: center;
   max-width: 780px;
+  padding: 24px;
+  padding-top: 0%;
 }
 
 /*workshop end*/
@@ -788,15 +774,30 @@ summary,
     display: none;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1023px) {
   body {
     margin-left: 10%;
     margin-right: 10%;
+  }
+  .logo2 img {
+    width: 140px;
+  }
+  .furtherInfoBox {
+    padding-top: 1rem;
+  }
+  .furtherInfoBox a {
+    text-decoration: none;
+    padding-top: 0.9rem;
   }
   .indexHeader {
     width: 100%;
     display: flex;
     justify-content: space-between;
+  }
+  .indexArt {
+    width: 100%;
+    display: block;
+    margin-left: 10%;
   }
   .indexHeader {
     display: none;
@@ -852,11 +853,13 @@ summary,
     width: -moz-fit-content;
     width: fit-content;
     margin: auto;
+    justify-content: center;
   }
   .gain > * {
     justify-content: center;
     text-align: center;
-    width: 170px;
+    width: 80%;
+    margin-inline: auto;
   }
   footer {
     display: block;
@@ -893,9 +896,6 @@ summary,
   .logo1 a {
     font-size: 12px;
   }
-  .indexArt {
-    display: none;
-  }
   /*services mediqquerries end*/
   /*index media querries*/
   .middleSection {
@@ -908,8 +908,47 @@ summary,
     width: 100%;
   }
   .middleSection img {
-    scale: 0.4;
+    scale: 0.6;
     justify-content: center;
-    margin-top: 0rem;
+    margin-top: 1.3rem;
+  }
+}
+/*quick fixes for different sizes*/
+@media only screen and (min-width: 320px) and (max-width: 780px) {
+  .middleSection img {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
+  .testimonialSectionDesktop {
+    width: 50%;
+    margin-top: -4rem;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .indexHrMobile {
+    display: none;
+  }
+  .indexHrDesktop {
+    width: 60%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    fill: rgba(255, 255, 255, 0.5);
+    -webkit-margin-start: 0%;
+            margin-inline-start: 0%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+  .indexHrMobile {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    fill: rgba(255, 255, 255, 0.5);
+    -webkit-margin-start: 0%;
+            margin-inline-start: 0%;
+  }
+  .indexHrIndex {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
