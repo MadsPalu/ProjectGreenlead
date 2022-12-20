@@ -10,7 +10,7 @@ const form = document.getElementById("mailForm");
         Email.send({
             Host: "smtp.elasticemail.com",
             Username: "backupmailforbackup@gmail.com",
-            Password: "620B83B57D06919BC9F906B6AE6CB124F6AD",
+            Password: "C7E023D7F0CEC0D7BAB26B35F949C3F3029F",
             To: `${email}`,
             From: "backupmailforbackup@gmail.com",
             Subject: `${subject}`,
